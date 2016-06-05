@@ -26,7 +26,7 @@ RSpec.configure do |config|
 
   # Delete directory for Paperclip attachment after test suite runs
   config.after(:suite) do
-    FileUtils.rm_rf(Dir["#{Rails.root}/spec/test_files/"])
+    FileUtils.rm_rf(Dir["#{Rails.root}/public/test_files/"])
   end
 
   # rspec-expectations config goes here. You can use an alternate
