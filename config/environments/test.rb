@@ -42,6 +42,7 @@ Rails.application.configure do
 
   config.serve_static_files = true
 
+  # Configure Paperclip attachment storage locations
   Paperclip::Attachment.default_options[:url] = "/test_files/:class/:id_partition/:style.:extension"
 
   Paperclip::Attachment.default_options[:path] = "#{Rails.root}/public:url"
